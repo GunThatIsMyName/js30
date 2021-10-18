@@ -49,3 +49,11 @@ kbd {
   letter-spacing: .1rem;
   color: #ffc600;
 }
+
+
+@media screen and (max-width: 600px) {
+  .keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
