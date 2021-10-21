@@ -9,7 +9,7 @@
   <p onClick="makeGreen()">×BREAK×DOWN×</p>
 
   <script>
-    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
+    const dogs = [{ name: 'minji', age: 2 }, { name: 'gun', age: 8 }];
 
     function makeGreen() {
       const p = document.querySelector('p');
@@ -18,25 +18,37 @@
     }
 
     // Regular
-
+    console.log("hello im minji","sexy")
     // Interpolated
-
+    console.log("hello im %s minji","sexy")
     // Styled
-
+    console.log("%c SEXY MINJI","color:red ; font-size:20px; background-color:yellow")
     // warning!
-
+    console.warn("OH NOOO")
     // Error :|
-
+    console.error("SHIT 🖕🏻")
+    
     // Info
-
+    console.info("SOME PEOPLE COME TO SEE MY CONSOLE")
+    
     // Testing
+    console.assert(1===2,"1 is eqaul 2")
+    const hello = document.querySelector("p")
+    console.assert(hello.classList.contains("hello"),"no hello on p class")
 
     // clearing
 
     // Viewing DOM Elements
+    console.log(hello)
+    console.dir(hello)
 
     // Grouping together
-
+    dogs.forEach(dog=>{
+      console.group(`${dog.name}`)
+      console.log(`my  dog name ${dog.name}`)
+      console.log(`DOG AGE : ${dog.age} -- ${dog.name} `)
+      console.groupEnd(`${dog.name}`)
+    })
     // counting
 
     // timing
