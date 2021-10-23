@@ -7,6 +7,20 @@
 </head>
 <body>
 <script>
+  const pressKey=[];
+  const secretKey = "sexyme"
+
+  const handleKey=(e)=>{
+    pressKey.push(e.key)
+    console.log(-secretKey.length-1,"1")
+    console.log(pressKey.length-secretKey.length,"2")
+    // if (pressKey.length > secretKey.length) pressKey.splice(0, 1)
+    pressKey.length > secretKey.length && pressKey.shift()
+
+    // pressKey.splice(-secretKey.length-1,pressKey.length-secretKey.length)
+    console.log(pressKey)
+  }
+    window.addEventListener("keypress",handleKey)
 </script>
 </body>
 </html>
